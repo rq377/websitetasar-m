@@ -8,6 +8,10 @@
 </head>
 
 <body>
+<div id="intro">
+  <h1>377's</h1>
+</div>
+
   <header>
     <h1>Oyun Tasarım Siparişleri</h1>
     <nav>
@@ -30,5 +34,14 @@
   <footer>
     <p>© 2025 Oyun Tasarım Siparişleri</p>
   </footer>
+<script>
+  window.addEventListener('load', () => {
+    const intro = document.getElementById('intro');
+    setTimeout(() => {
+      intro.classList.add('hide');
+    }, 2500); // 2.5 saniye sonra gizle
+  });
+</script>
+
 </body>
 </html>
