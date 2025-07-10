@@ -9,8 +9,9 @@
 
 <body>
 <div id="intro">
-  <h1>377's</h1>
+  <h1 class="glow">377’s</h1>
 </div>
+
 
   <header>
     <h1>Oyun Tasarım Siparişleri</h1>
@@ -38,10 +39,11 @@
   window.addEventListener('load', () => {
     const intro = document.getElementById('intro');
     setTimeout(() => {
-      intro.classList.add('hide');
-    }, 2500); // 2.5 saniye sonra gizle
+      intro.classList.add('fade-out');
+    }, 2500); // 2.5 saniye sonra animasyonla kaybolur
   });
 </script>
+
 
 </body>
 </html>
